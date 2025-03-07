@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-image: url(power-color-260nw-365429198.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+    text-shadow: 0 0 20px #ff9900,
+        0 0 30px #ff6600, 0 0 40px #ff3300,
+        0 0 50px #ff0000;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: orangered;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff0000;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.navbar a:hover:after {
+    transform: translateY(0);
+    opacity: 1;
+}
